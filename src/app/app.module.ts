@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { FormularioComponent } from './formulario/formulario.component';
 
 import { FormsModule } from '@angular/forms';
+import { ListadoComponent } from './listado/listado.component';
+
+import { ServicioComunService } from './servicio-comun.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent
+    FormularioComponent,
+    ListadoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServicioComunService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
